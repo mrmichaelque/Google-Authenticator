@@ -22,7 +22,7 @@ To use Google authentication in your project, follow these steps:
 Here's a README file tailored for a GitHub repository that implements Google authentication:
 
 ```markdown
-# Google Authentication with [Your Project Name]
+# Google Authentication with My Webfolio.
 
 [Optional: Include a project logo or banner here]
 
