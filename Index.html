@@ -5,9 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Authentication Options</title>
     <link rel="stylesheet" href="auth.css">
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 100px;
+        }
+        .google-btn, .github-btn, .passkey-btn {
+            display: block;
+            width: 200px;
+            margin: 10px auto;
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 5px;
+        }
+        .google-btn {
+            background-color: #4285f4;
+        }
+        .github-btn {
+            background-color: #333;
+        }
+        .passkey-btn {
+            background-color: #4caf50;
+        }
+    </style>
 </head>
 <body>
-    <style>
     <div class="container">
         <h1>Welcome to The Work Within Queue</h1>
         <p>Please sign in to continue:</p>
@@ -16,5 +39,4 @@
         <button class="passkey-btn">Sign in with Passkey</button>
     </div>
 </body>
-        </style>
 </html>
