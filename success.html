@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login with Google</title>
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script>
+        function onSignIn(googleUser) {
+            // Redirect to the success page
+            window.location.href = '/success.html';
+        }
+
+        function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                alert('You have been signed out.');
+                // Redirect to the login page or do something else
+                window.location.href = '/';
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <button onclick="signOut();">Sign out</button>
+</body>
+</html>
