@@ -1,86 +1,54 @@
 # Google Authentication with The Work Within Queue: A Webfolio of Projects and Programs by Michael Que.
 
-## Introduction
+# Google Sign-In Demo
 
-This repository contains code for implementing Google authentication in The Work Within Queue: A Webfolio of Projects and Programs by Michael Que. Google authentication allows users to sign in to your application using their Google accounts, providing a seamless and secure login experience.
-
-## Features
-
-- **Sign in with Google:** Users can sign in to your application using their Google accounts.
-- **Secure Authentication:** Google authentication utilizes OAuth 2.0 protocol, ensuring secure and reliable user authentication.
-- **Customizable:** Easily integrate Google authentication into your project and customize the sign-in process to fit your application's design and requirements.
-
-## Installation
-
-To use Google authentication in your project, follow these steps:
-
-1. **Clone the Repository:** Clone this repository to your local machine using Git:
-
-   ```bash
-   git clone https://github.com/yourusername/yourproject.git
-
-Here's a README file tailored for a GitHub repository that implements Google authentication:
-
-```markdown
-# Google Authentication with My Webfolio.
-
-[Optional: Include a project logo or banner here]
-
-## Introduction
-
-This repository contains code for implementing Google authentication in [Your Project Name]. Google authentication allows users to sign in to your application using their Google accounts, providing a seamless and secure login experience.
+This project demonstrates how to integrate Google Sign-In into a web application. It allows users to sign in with their Google accounts and redirects them to a success page upon successful authentication. It also provides a sign-out button with a message alert.
 
 ## Features
 
-- **Sign in with Google:** Users can sign in to your application using their Google accounts.
-- **Secure Authentication:** Google authentication utilizes OAuth 2.0 protocol, ensuring secure and reliable user authentication.
-- **Customizable:** Easily integrate Google authentication into your project and customize the sign-in process to fit your application's design and requirements.
+- Google Sign-In integration
+- Redirect to a success page upon login
+- Alert message on sign-out
+- Responsive sign-in button
 
-## Installation
+## Prerequisites
 
-To use Google authentication in your project, follow these steps:
+Before you begin, you need to have the following:
 
-1. **Clone the Repository:** Clone this repository to your local machine using Git:
+- A Google account
+- A Google Cloud Platform project with the OAuth 2.0 API enabled
+- A client ID for your web application
 
-   ```bash
-   git clone https://github.com/yourusername/yourproject.git
-   ```
+## Setup
 
-2. **Install Dependencies:** Install any necessary dependencies required for Google authentication. This may include libraries or modules for handling OAuth 2.0 authentication.
-
-3. **Set Up Google OAuth Credentials:** Create OAuth 2.0 credentials in the Google Cloud Console. Configure the OAuth consent screen and obtain a client ID and client secret.
-
-4. **Configure Your Application:** Update your application code to integrate Google authentication. Use the client ID and client secret obtained from Google to configure OAuth authentication in your application.
-
-5. **Test Authentication:** Test the authentication flow to ensure users can sign in with their Google accounts successfully.
+1. Clone the repository to your local machine or download the source code.
+2. Replace `YOUR_CLIENT_ID` in the `index.html` file with your actual Google client ID.
+3. Host the application on a server or run it locally on port 3000.
 
 ## Usage
 
-To use Google authentication in your project, follow these steps:
-
-1. **Include Sign-In Button:** Add a sign-in button or link to your application's login page. Use the provided Google Sign-In button or customize it to match your application's design.
-
-   ```html
-   <a href="/auth/google" class="google-btn">Sign in with Google</a>
-   ```
-
-2. **Handle Authentication Callback:** Implement server-side code to handle the authentication callback from Google. Retrieve user information and perform necessary actions (e.g., create a new user account, log in existing user).
-
-3. **Access User Data:** Once authenticated, you can access user data provided by Google (e.g., email, name) and use it within your application.
+1. Open the `index.html` file in your web browser.
+2. Click on the Google Sign-In button.
+3. Choose your Google account and grant the necessary permissions.
+4. You will be redirected to the `success.html` page if the login is successful.
+5. To sign out, click the "Sign out" button on either the main page or the success page.
 
 ## Contributing
 
-Contributions to this project are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
-
-Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) file for more information on contributing guidelines.
+Contributions are welcome! Feel free to open a pull request or an issue if you have suggestions or find a bug.
 
 ## License
 
-[Include License Information Here]
+This project is open-source and available under the [MIT License](LICENSE).
 
-## Support
+## Acknowledgments
 
-For any questions, feedback, or support requests, please contact [Your Contact Information] or visit [Your Project Website or Documentation].
-```
+- Google Sign-In for Websites documentation: https://developers.google.com/identity/sign-in/web/sign-in
+- Google APIs Client Library for JavaScript: https://apis.google.com/js/platform.js
 
-This README file provides instructions for installing, configuring, and using Google authentication in a project, along with guidelines for contributing and obtaining support. Customize it with your project's specific details, such as project name, GitHub repository URL, license information, and contact details.
+## Contact
+
+If you have any questions or comments about the project, please feel free to contact the maintainers.
+
+
+
