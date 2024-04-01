@@ -9,6 +9,7 @@ function App() {
           by Michael Que<br>
         </p>
       </header>
+      <button>Log in</button>
     </div>
   );
 }
