@@ -4,30 +4,24 @@
     <title>Login with Google</title>
     <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
-</head>
-<body>
-    <div class="g-signin2" data-onsuccess="onSignIn"></div>
     <script>
         function onSignIn(googleUser) {
-            // Get the user's profile information
-            var profile = googleUser.getBasicProfile();
-            console.log('ID: ' + profile.getId());
-            console.log('Full Name: ' + profile.getName());
-            console.log('Given Name: ' + profile.getGivenName());
-            console.log('Family Name: ' + profile.getFamilyName());
-            console.log('Image URL: ' + profile.getImageUrl());
-            console.log('Email: ' + profile.getEmail());
-
-            // You can also get the ID token of the user from googleUser.getAuthResponse().id_token
-            // and send it to your backend for verification and to create a session
+            // Redirect to the success page
+            window.location.href = '/success.html';
         }
 
         function signOut() {
             var auth2 = gapi.auth2.getAuthInstance();
             auth2.signOut().then(function () {
-                console.log('User signed out.');
+                alert('You have been signed out.');
+                // Redirect to the login page or do something else
+                window.location.href = '/';
             });
         }
     </script>
+</head>
+<body>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <button onclick="signOut();">Sign out</button>
 </body>
 </html>
