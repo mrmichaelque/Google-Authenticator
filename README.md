@@ -1,4 +1,4 @@
-# Google Authentication with The Work Within Queue: A Webfolio of Projects and Programs by Michael Que.
+# Google Authentication Integration in Webfolio
 
 # Google Sign-In Demo
 
