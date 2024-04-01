@@ -1,42 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Authentication Options</title>
-    <link rel="stylesheet" href="auth.css">
-    <style>
-        .container {
-            text-align: center;
-            margin-top: 100px;
-        }
-        .google-btn, .github-btn, .passkey-btn {
-            display: block;
-            width: 200px;
-            margin: 10px auto;
-            padding: 10px;
-            text-decoration: none;
-            color: #fff;
-            border-radius: 5px;
-        }
-        .google-btn {
-            background-color: #4285f4;
-        }
-        .github-btn {
-            background-color: #333;
-        }
-        .passkey-btn {
-            background-color: #4caf50;
-        }
-    </style>
+    <title>Login with Google</title>
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to The Work Within Queue</h1>
-        <p>Please sign in to continue:</p>
-        <a href="/auth/google" class="google-btn" alt="Sign in with Google">Sign in with Google</a>
-        <a href="/auth/github" class="github-btn" alt="Sign in with GitHub">Sign in with GitHub</a>
-        <button class="passkey-btn">Sign in with Passkey</button>
-    </div>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <script>
+        function onSignIn(googleUser) {
+            // Get the user's profile information
+            var profile = googleUser.getBasicProfile();
+            console.log('ID: ' + profile.getId());
+            console.log('Full Name: ' + profile.getName());
+            console.log('Given Name: ' + profile.getGivenName());
+            console.log('Family Name: ' + profile.getFamilyName());
+            console.log('Image URL: ' + profile.getImageUrl());
+            console.log('Email: ' + profile.getEmail());
+
+            // You can also get the ID token of the user from googleUser.getAuthResponse().id_token
+            // and send it to your backend for verification and to create a session
+        }
+
+        function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                console.log('User signed out.');
+            });
+        }
+    </script>
 </body>
 </html>
