@@ -5,7 +5,8 @@ function App() {
     <div className='App'>
       <header className='App-header'>
         <p>
-          Case Management Web Server Application
+          Case Management Solution<br>
+          by Michael Que<br>
         </p>
       </header>
     </div>
