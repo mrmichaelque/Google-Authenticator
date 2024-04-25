@@ -1,0 +1,18 @@
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide {
+  display: none;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.active {
+  display: block;
+}
