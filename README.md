@@ -4,6 +4,8 @@
 
 This project demonstrates how to integrate Google Sign-In into a web application. It allows users to sign in with their Google accounts and redirects them to a success page upon successful authentication. It also provides a sign-out button with a message alert.
 
+<img src="https://github.com/mrmichaelque/Google-Authenticator/raw/main/carousel/index.html" alt="Carousel">
+
 ## Features
 
 - Google Sign-In integration
